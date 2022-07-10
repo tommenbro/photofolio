@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
       <Hero
         heading="Northern Lights Photography"
-        message="Norways finest moments captured for you to injoy."
+        message="Norways most extraordinary moments captured for you."
       />
       <Slider slides={SliderData} />
       <Gram grams={GramData} />

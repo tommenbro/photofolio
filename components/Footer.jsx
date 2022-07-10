@@ -1,13 +1,12 @@
 import React from 'react'
-import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <div className='w-full p-4  text-lg'>
-        <Link href="https://nakkerud.studio" target="_blank"> 
+    <div className='w-full p-4 text-lg'>
+        <a className='' href="https://nakkerud.studio" target="_blank" rel="noreferrer"> 
         Made by
         Nakkerud Studio, 2022
-        </Link>
+        </a>
     </div>
   )
 }

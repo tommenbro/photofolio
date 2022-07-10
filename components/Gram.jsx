@@ -2,7 +2,6 @@ import React from 'react'
 import { GramData } from './GramData'
 import Image from 'next/image'
 import { FaInstagram } from 'react-icons/fa'
-import Link from 'next/link'
 
 const Gram = ({grams}) => {
   return (
@@ -17,7 +16,7 @@ const Gram = ({grams}) => {
             <Image className='w-full h-full' layout='responsive' src={gram.image} alt='/' width='1440' height="600" objectFit="cover" />
             {/* Overlay */}
             <div className='flex justify-center items-center absolute top-0 left-0 right-0 bottom-0 hover:bg-black/50'>
-            <Link target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/"><FaInstagram className='text-gray-300 opacity-0 hover:opacity-100 z-10' size={75}></FaInstagram></Link>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/"><FaInstagram className='text-gray-300 opacity-0 hover:opacity-100 z-10' size={75}></FaInstagram></a>
             </div>
         </div>
         )

@@ -31,7 +31,7 @@ const Slider = ({slides}) => {
 
               <AiOutlineArrowLeft onClick={previousSlide} size={50} className='absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]' />
             {index === currentSlide && (
-              <Image src={slide.image} alt='/' width='1440' height="600" objectFit="cover" />
+              <Image src={slide.image} alt='/' width='1440' height="720" objectFit="cover" />
             )}
 
             <AiOutlineArrowRight onClick={nextSlide} size={50} className='absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]' />

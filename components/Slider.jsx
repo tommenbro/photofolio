@@ -29,12 +29,12 @@ const Slider = ({slides}) => {
           return (
             <div key={index} className={index === currentSlide ? 'opacity-[1] ease-in duration-700' : 'opacity-[0]'}>
 
-              <AiOutlineArrowLeft onClick={previousSlide} size={50} className='absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]' />
+              <AiOutlineArrowLeft onClick={previousSlide} size={60} className='hover:text-white absolute top-[50%] left-[30px] text-gray-100/90 cursor-pointer select-none z-[2]' />
             {index === currentSlide && (
-              <Image src={slide.image} alt='/' width='1440' height="720" objectFit="cover" />
+              <Image src={slide.image} alt='/' width='1280' height="720" objectFit="cover" />
             )}
 
-            <AiOutlineArrowRight onClick={nextSlide} size={50} className='absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]' />
+            <AiOutlineArrowRight onClick={nextSlide} size={60} className='hover:text-white absolute top-[50%] right-[30px] text-gray-100/90 cursor-pointer select-none z-[2]' />
             </div>
           
           )
